@@ -1,7 +1,22 @@
+import java.util.Scanner;
 import java.lang.Math;
 
-public class scientific-calculator{
-public static void main(String[] args){
+public class scientificCalculator {
 
-}
+	public static void main(String[] args) {
+		
+		double value1,value2,total;
+		char equal='=';
+		System.out.println("Choose a number: ");
+		Scanner sc=new Scanner(System.in);
+		value1=sc.nextDouble();
+		System.out.println("Choose another number or start the calculation pressing =");
+		Scanner sc2=new Scanner(System.in);
+			
+		/*value2=sc2.nextDouble();
+		System.out.println("The value is: "+value1);
+		*/
+
+	}
+
 }
