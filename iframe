@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 package calculadora;
-import java.lang.*;
+import java.lang.Math;
 
 
 
@@ -64,6 +64,7 @@ public class frmCalculadora extends javax.swing.JFrame {
         jButton27 = new javax.swing.JButton();
         jButton28 = new javax.swing.JButton();
         jButton30 = new javax.swing.JButton();
+        jButton31 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Calculadora");
@@ -95,7 +96,7 @@ public class frmCalculadora extends javax.swing.JFrame {
                 jButton2ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 110, 70, 30));
+        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 110, 70, 30));
 
         jButton3.setBackground(new java.awt.Color(0, 0, 0));
         jButton3.setForeground(new java.awt.Color(255, 255, 255));
@@ -145,7 +146,7 @@ public class frmCalculadora extends javax.swing.JFrame {
                 jButton7ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 110, 50, 30));
+        getContentPane().add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 110, 50, 30));
 
         jButton8.setBackground(new java.awt.Color(0, 0, 0));
         jButton8.setForeground(new java.awt.Color(255, 255, 255));
@@ -185,7 +186,7 @@ public class frmCalculadora extends javax.swing.JFrame {
                 jButton12ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton12, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 110, -1, 30));
+        getContentPane().add(jButton12, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 110, -1, 30));
 
         jButton13.setBackground(new java.awt.Color(0, 0, 0));
         jButton13.setForeground(new java.awt.Color(255, 255, 255));
@@ -235,7 +236,7 @@ public class frmCalculadora extends javax.swing.JFrame {
                 jButton17ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton17, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 110, -1, 30));
+        getContentPane().add(jButton17, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 110, -1, 30));
 
         jButton18.setBackground(new java.awt.Color(0, 0, 0));
         jButton18.setForeground(new java.awt.Color(255, 255, 255));
@@ -275,7 +276,7 @@ public class frmCalculadora extends javax.swing.JFrame {
                 jButton22ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton22, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 110, -1, 30));
+        getContentPane().add(jButton22, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 110, -1, 30));
 
         jButton24.setBackground(new java.awt.Color(0, 0, 0));
         jButton24.setForeground(new java.awt.Color(255, 255, 255));
@@ -348,7 +349,7 @@ public class frmCalculadora extends javax.swing.JFrame {
                 jButton19ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton19, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 150, 70, 30));
+        getContentPane().add(jButton19, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 150, 70, 30));
 
         jButton23.setBackground(new java.awt.Color(153, 153, 0));
         jButton23.setForeground(new java.awt.Color(255, 255, 255));
@@ -358,7 +359,7 @@ public class frmCalculadora extends javax.swing.JFrame {
                 jButton23ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton23, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 150, -1, 30));
+        getContentPane().add(jButton23, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 150, -1, 30));
 
         jButton27.setBackground(new java.awt.Color(153, 102, 0));
         jButton27.setForeground(new java.awt.Color(255, 255, 255));
@@ -368,7 +369,7 @@ public class frmCalculadora extends javax.swing.JFrame {
                 jButton27ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton27, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 150, -1, 30));
+        getContentPane().add(jButton27, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 150, 70, 30));
 
         jButton28.setBackground(new java.awt.Color(153, 102, 0));
         jButton28.setForeground(new java.awt.Color(255, 255, 255));
@@ -378,7 +379,7 @@ public class frmCalculadora extends javax.swing.JFrame {
                 jButton28ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton28, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 150, -1, 30));
+        getContentPane().add(jButton28, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 150, 70, 30));
 
         jButton30.setBackground(new java.awt.Color(153, 102, 0));
         jButton30.setForeground(new java.awt.Color(255, 255, 255));
@@ -388,7 +389,15 @@ public class frmCalculadora extends javax.swing.JFrame {
                 jButton30ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton30, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 150, 50, 30));
+        getContentPane().add(jButton30, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 150, 70, 30));
+
+        jButton31.setText("SHIFT");
+        jButton31.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton31ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton31, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 110, 70, 30));
 
         pack();
     }// </editor-fold>                        
@@ -594,8 +603,12 @@ public class frmCalculadora extends javax.swing.JFrame {
         String cadena;
         Double num;
         cadena=txtpantalla.getText();
-        num=Math.tan(Double.parseDouble(cadena));
-        txtpantalla.setText(Double.toString(num));
+        if(jButton27.getText()=="tan"){
+            num=Math.tan(Double.parseDouble(cadena));
+            txtpantalla.setText(Double.toString(num));
+        }else{
+            num=1/(Math.tan(Double.parseDouble(cadena)));
+            txtpantalla.setText(Double.toString(num));}
     }                                         
 
     private void jButton28ActionPerformed(java.awt.event.ActionEvent evt) {                                          
@@ -603,8 +616,13 @@ public class frmCalculadora extends javax.swing.JFrame {
         String cadena;
         Double num;
         cadena=txtpantalla.getText();
-        num=Math.cos(Double.parseDouble(cadena));
-        txtpantalla.setText(Double.toString(num));
+        if(jButton28.getText()=="cos"){
+            num=Math.cos(Double.parseDouble(cadena));
+            txtpantalla.setText(Double.toString(num));
+        }else{
+            num=1/(Math.cos(Double.parseDouble(cadena)));
+            txtpantalla.setText(Double.toString(num));
+        }
     }                                         
 
     private void jButton30ActionPerformed(java.awt.event.ActionEvent evt) {                                          
@@ -612,10 +630,28 @@ public class frmCalculadora extends javax.swing.JFrame {
         String cadena;
         Double num;
         cadena=txtpantalla.getText();
-        num=Math.sin(Double.parseDouble(cadena));
-        txtpantalla.setText(Double.toString(num));
+        if(jButton30.getText()=="sin"){
+            num=Math.sin(Double.parseDouble(cadena));
+            txtpantalla.setText(Double.toString(num));
+        }else{
+            num=1/(Math.sin(Double.parseDouble(cadena)));
+            txtpantalla.setText(Double.toString(num));
+        }
     }                                         
-               
+
+    private void jButton31ActionPerformed(java.awt.event.ActionEvent evt) {                                          
+        // TODO add your handling code here:
+        if (jButton30.getText()=="sin"){
+            jButton30.setText("cosec");
+            jButton28.setText("sec");
+            jButton27.setText("cotan");
+    }                                         
+        else{
+            jButton30.setText("sin");
+            jButton28.setText("cos");
+            jButton27.setText("tan");
+        }
+    }           
     public static String calculadora(String memoria1,String memoria2,String signo){
         Double resultado=0.0;
         String respuesta;
@@ -705,6 +741,7 @@ public class frmCalculadora extends javax.swing.JFrame {
     private javax.swing.JButton jButton29;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton30;
+    private javax.swing.JButton jButton31;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton6;
